@@ -1,0 +1,18 @@
+activate_pip_dir(){
+pwd
+echo $1
+source $1venv/bin/activate
+}
+eval `ssh-agent`
+ssh-add ~/.gitkey
+
+alias cls='clear'
+alias gp='git push'
+alias gc='git commit -a -m '
+alias act=activate_pip_dir
+alias gs='git status'
+alias mkenv='virtualenv venv'
+export DISPLAY="$(grep nameserver /etc/resolv.conf | sed 's/nameserver //'):0"
+alias bashrc='. ~/.bashrc'
+alias pre='pre-commit run --all-files'
+alias ga='git add --all'
