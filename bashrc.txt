@@ -1,18 +1,35 @@
-activate_pip_dir(){
-pwd
-echo $1
-source $1venv/bin/activate
+venv_activate(){
+  . $1venv/bin/activate
 }
+
+
+
+###### LINUX SHORTS ############
+alias cls='clear'
+alias bashrc='. ~/.bashrc'
+
+###### GIT/CODING SHORTS ######
 eval `ssh-agent`
 ssh-add ~/.gitkey
-
-alias cls='clear'
 alias gp='git push'
 alias gc='git commit -a -m '
-alias act=activate_pip_dir
-alias gs='git status'
-alias mkenv='virtualenv venv'
-export DISPLAY="$(grep nameserver /etc/resolv.conf | sed 's/nameserver //'):0"
-alias bashrc='. ~/.bashrc'
-alias pre='pre-commit run --all-files'
 alias ga='git add --all'
+alias gs='git status'
+
+alias pre='pre-commit run --all-files'
+alias activate=venv_activate
+alias mkenv='virtualenv venv'
+
+
+###### APP SHORTS ############
+alias google='google-chrome&'
+alias pycharm='pycharm& cd ~/PycharmProjects'
+alias postman="postman&"
+alias popcorn="popcorn&"
+alias spotify="spotify &"
+
+###### WINDOWS WONDERS ######
+
+#export DISPLAY="$(grep nameserver /etc/resolv.conf | sed 's/nameserver //'):0"
+
+
