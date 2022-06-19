@@ -5,6 +5,9 @@ venv_activate(){
 
 
 ###### LINUX SHORTS ############
+alias shutdown='sudo shutdown now'
+alias hibernate='systemctl hibernate'
+alias sleep='systemctl sleep'
 alias cls='clear'
 alias bashrc='. ~/.bashrc'
 
