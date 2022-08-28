@@ -1,0 +1,3 @@
+# install the ppa: https://www.linuxcapable.com/how-to-install-linux-kernel-5-17-on-linux-mint-20-lts/
+sudo apt install --install-recommends linux-generic -y
+sudo apt-get install linux-generic-xxx
