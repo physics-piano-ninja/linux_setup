@@ -1,0 +1,5 @@
+checkout new branch: git checkout -b <branch_name>
+checkout branch: git checkout <branch_name>
+add changes: git add --all 
+commit changes: git commit -m "<your_message>"
+push changes: git push
