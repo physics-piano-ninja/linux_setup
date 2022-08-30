@@ -1,0 +1,3 @@
+start session= tmux
+create background session = Ctrl b *let go* d
+attach background session = tmux a
